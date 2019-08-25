@@ -1,0 +1,44 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<div class="container">
+    <form class="form-signin mt-5">
+        <div class="text-center mb-4">
+            <img class="mb-4" src="#" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">AcademicoLivre</h1>
+            <p>Welcome to the AcademicoLivre system. Login to continue.</p>
+        </div>
+
+        <div class="form-label-group">
+            <input type="number" id="registrationNumber" class="form-control" placeholder="Registration number" required autofocus>
+            <label for="registrationNumber">Registration number</label>
+        </div>
+
+        <div class="form-label-group">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <label for="inputPassword">Password</label>
+        </div>
+
+        <div class="radio mb-3">
+            <label>
+                <input type="radio" value="teacher" name="module"> Teacher
+            </label>
+            <label>
+                <input type="radio" value="teacher" name="module" checked> Student
+            </label>
+            <label>
+                <input type="radio" value="teacher" name="module"> Student's parents
+            </label>
+            <label>
+                <input type="radio" value="teacher" name="module"> Enterprise
+            </label>
+            <label>
+                <input type="radio" value="teacher" name="module"> Admnistrative technician
+            </label>
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>
+    </form>
+</div>
+{% endblock %}
